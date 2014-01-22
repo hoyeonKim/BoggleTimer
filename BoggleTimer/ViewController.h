@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    NSInteger mycounter;
+}
 - (IBAction)startButton:(id)sender;
 - (IBAction)stopTouched:(UIButton *)sender;
 - (IBAction)resetTouched:(UIButton *)sender;

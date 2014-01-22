@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.mycounter=[self showTime.seconds];
+    self.mycounter=[self showTime];
     //쇼타임의 초를 받아와야함
     
     
@@ -40,7 +40,14 @@
 - (void)updateTimer{ //Happens every time updateTimer is called. Should occur every second.
     
     self.mycounter -= 0.01;
-    self.countdownLabel.text = [NSString stringWithFormat:@"%i", self.mycounter];
+    NSDate *currentDate = [NSDate date];
+    NSTimeInterval timeInterval = [currentDate timeIntervalSinceNow];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    [dateFormatter setDateFormat:@"mm : ss : SS"];
+    NSString *timeString=[dateFormatter stringFromDate:timerDate];
+    self.countdownLabel.text = timeString;
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
     
     if (self.mycounter < 0) // Once timer goes below 0, reset all variables.
     {
@@ -68,7 +75,7 @@
     {
         self.countdownLabel.text = @"시작";
         self.isStarted = NO;
-        self.mytimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTimer) userInfo:nil repeats:YES];
+        self.mytimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(updateTimer) userInfo:nil repeats:YES];
         [self buttonStatesWithStartState:NO stopState:YES resetState:NO];
     }
     UILocalNotification *noti = [[UILocalNotification alloc]init];
@@ -112,11 +119,11 @@
     if (resetState) self.btnReset.alpha = 1;
 }
 
-- (void)showTime
+- (int)showTime
 {
     //다른 뷰컨트롤러에서 입력했던 시간값을 받아와야함
-    int minutes = int (seconds/60);
-    int seconds =[gookmulViewController거나 bibimViewController의 data에서 time] ;
+    int seconds=;
+    int minutes = seconds/60;
     int hundredths =99;
     NSArray *timeArray = [NSArray arrayWithObjects:self.countdownLabel.text, nil];
     
@@ -153,7 +160,7 @@
     
     self.countdownLabel.text = [NSString stringWithFormat:@"%.2d : %.2d : %.2d", minutes,seconds,hundredths];
     
-    
+    return seconds;
 }
 
 

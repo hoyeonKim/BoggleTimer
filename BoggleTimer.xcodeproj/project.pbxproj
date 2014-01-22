@@ -29,6 +29,7 @@
 		00A9BC9D188F8C260095800A /* productCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9BC9C188F8C260095800A /* productCell.m */; };
 		00A9BCA1188F919B0095800A /* images-5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 00A9BCA0188F919B0095800A /* images-5.jpeg */; };
 		00A9BCA3188F930D0095800A /* s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A9BCA2188F930D0095800A /* s.jpg */; };
+		00A9BCE7188FA5AB0095800A /* BibimCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9BCE6188FA5AB0095800A /* BibimCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		00A9BC9C188F8C260095800A /* productCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productCell.m; sourceTree = "<group>"; };
 		00A9BCA0188F919B0095800A /* images-5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-5.jpeg"; sourceTree = "<group>"; };
 		00A9BCA2188F930D0095800A /* s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s.jpg; sourceTree = "<group>"; };
+		00A9BCE5188FA5AB0095800A /* BibimCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BibimCell.h; sourceTree = "<group>"; };
+		00A9BCE6188FA5AB0095800A /* BibimCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BibimCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				00A9BC99188F72D20095800A /* gookmulViewController.m */,
 				00A9BC9B188F8C260095800A /* productCell.h */,
 				00A9BC9C188F8C260095800A /* productCell.m */,
+				00A9BCE5188FA5AB0095800A /* BibimCell.h */,
+				00A9BCE6188FA5AB0095800A /* BibimCell.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A9BC70188F551D0095800A /* ViewController.m in Sources */,
+				00A9BCE7188FA5AB0095800A /* BibimCell.m in Sources */,
 				00A9BC6A188F551D0095800A /* AppDelegate.m in Sources */,
 				00A9BC94188F60600095800A /* bibimViewController.m in Sources */,
 				00A9BC66188F551D0095800A /* main.m in Sources */,

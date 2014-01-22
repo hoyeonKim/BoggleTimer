@@ -7,15 +7,13 @@
 //
 
 #import "bibimViewController.h"
-#import "productCell.h"
+#import "BibimCell.h"
 #import "ListOfRamen.h"
 #define BIBIM_CELL @"BIBIM_CELL"
 @interface bibimViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSArray *data2;
 }
-@property (weak, nonatomic) IBOutlet UIImageView *image2;
-@property (weak, nonatomic) IBOutlet UILabel *lbl2;
-@property (weak, nonatomic) IBOutlet UITableView *table2;
+
 
 @end
 
@@ -23,7 +21,7 @@
 
 //bibim
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    productCell *cell =[tableView dequeueReusableCellWithIdentifier:BIBIM_CELL];
+    BibimCell *cell =[tableView dequeueReusableCellWithIdentifier:BIBIM_CELL];
     ListOfRamen *item =data2[indexPath.row];
     [cell setProductInfo:item];
     return cell;
@@ -33,12 +31,14 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [data2 count];
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     data2 =@[[ListOfRamen ramen:@"짜파게티" time:@"210" image:@"s.jpg"]];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
