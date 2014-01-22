@@ -32,14 +32,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.mycounter=[self showTime.seconds];
-
+    //쇼타임의 초를 받아와야함
     
     
 }
 
 - (void)updateTimer{ //Happens every time updateTimer is called. Should occur every second.
     
-    self.mycounter -= 1;
+    self.mycounter -= 0.01;
     self.countdownLabel.text = [NSString stringWithFormat:@"%i", self.mycounter];
     
     if (self.mycounter < 0) // Once timer goes below 0, reset all variables.
@@ -115,9 +115,9 @@
 - (void)showTime
 {
     //다른 뷰컨트롤러에서 입력했던 시간값을 받아와야함
-    int minutes =[sel];
-    int seconds = ;
-    int hundredths = ;
+    int minutes = int (seconds/60);
+    int seconds =[gookmulViewController거나 bibimViewController의 data에서 time] ;
+    int hundredths =99;
     NSArray *timeArray = [NSArray arrayWithObjects:self.countdownLabel.text, nil];
     
     for(int i=0;i<[timeArray count];i++)
