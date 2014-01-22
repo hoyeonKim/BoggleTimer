@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.mycounter=[self showTime];
+    [self showTime];
     //쇼타임의 초를 받아와야함
     
     
@@ -122,33 +122,33 @@
 - (int)showTime
 {
     //다른 뷰컨트롤러에서 입력했던 시간값을 받아와야함
-    int seconds=;
+    int seconds= self.mycounter;
     int minutes = seconds/60;
     int hundredths =99;
-    NSArray *timeArray = [NSArray arrayWithObjects:self.countdownLabel.text, nil];
-    
-    for(int i=0;i<[timeArray count];i++)
-        //(int i = [timeArray count] - 1; i >= 0; i–)
-    {
-        int timeComponent = [[timeArray objectAtIndex:i] intValue];
-        switch (i) {
-        
-            case 2:
-                minutes = timeComponent;
-                break;
-            case 1:
-                seconds = timeComponent;
-                break;
-            case 0:
-                hundredths = timeComponent;
-                hundredths++;
-                break;
-                
-            default:
-                break;
-        }
-        
-    }
+//    NSArray *timeArray = [NSArray arrayWithObjects:self.countdownLabel.text, nil];
+//    
+//    for(int i=0;i<[timeArray count];i++)
+//        //(int i = [timeArray count] - 1; i >= 0; i–)
+//    {
+//        int timeComponent = [[timeArray objectAtIndex:i] intValue];
+//        switch (i) {
+//        
+//            case 2:
+//                minutes = timeComponent;
+//                break;
+//            case 1:
+//                seconds = timeComponent;
+//                break;
+//            case 0:
+//                hundredths = timeComponent;
+//                hundredths++;
+//                break;
+//                
+//            default:
+//                break;
+//        }
+//        
+//    }
     if (hundredths == 0) {
         seconds--;
         hundredths = 100;

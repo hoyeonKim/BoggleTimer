@@ -9,6 +9,8 @@
 #import "gookmulViewController.h"
 #import "productCell.h"
 #import "ListOfRamen.h"
+#import "ViewController.h"
+
 #define GOOK_CELL @"GOOK_CELL"
 
 @interface gookmulViewController ()<UITableViewDelegate,UITableViewDataSource>{
@@ -22,6 +24,12 @@
 
 @implementation gookmulViewController
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ViewController *vc = (ViewController *)segue.destinationViewController;
+    productCell *p = (productCell *)[self.table1 cellForRowAtIndexPath:[self.table1 indexPathForSelectedRow]];
+
+    vc.mycounter = [p.ramenTime.text integerValue];
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     productCell *cell =[tableView dequeueReusableCellWithIdentifier:GOOK_CELL];
     ListOfRamen *item =data[indexPath.row];
