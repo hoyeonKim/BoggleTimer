@@ -21,6 +21,10 @@
 		00A9BC7B188F551D0095800A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A9BC5D188F551D0095800A /* UIKit.framework */; };
 		00A9BC83188F551D0095800A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00A9BC81188F551D0095800A /* InfoPlist.strings */; };
 		00A9BC85188F551D0095800A /* BoggleTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9BC84188F551D0095800A /* BoggleTimerTests.m */; };
+		00A9BC8F188F56720095800A /* boggle1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A9BC8E188F56720095800A /* boggle1.jpg */; };
+		00A9BC91188F58F40095800A /* 2014-01-14_14;36;04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A9BC90188F58F40095800A /* 2014-01-14_14;36;04.jpg */; };
+		00A9BC94188F60600095800A /* bibimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9BC93188F60600095800A /* bibimViewController.m */; };
+		00A9BC97188F63F50095800A /* ListOfRamen.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9BC96188F63F50095800A /* ListOfRamen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		00A9BC80188F551D0095800A /* BoggleTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BoggleTimerTests-Info.plist"; sourceTree = "<group>"; };
 		00A9BC82188F551D0095800A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00A9BC84188F551D0095800A /* BoggleTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoggleTimerTests.m; sourceTree = "<group>"; };
+		00A9BC8E188F56720095800A /* boggle1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boggle1.jpg; sourceTree = "<group>"; };
+		00A9BC90188F58F40095800A /* 2014-01-14_14;36;04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2014-01-14_14;36;04.jpg"; sourceTree = "<group>"; };
+		00A9BC92188F60600095800A /* bibimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bibimViewController.h; sourceTree = "<group>"; };
+		00A9BC93188F60600095800A /* bibimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bibimViewController.m; sourceTree = "<group>"; };
+		00A9BC95188F63F50095800A /* ListOfRamen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfRamen.h; sourceTree = "<group>"; };
+		00A9BC96188F63F50095800A /* ListOfRamen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListOfRamen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,8 @@
 		00A9BC5F188F551D0095800A /* BoggleTimer */ = {
 			isa = PBXGroup;
 			children = (
+				00A9BC90188F58F40095800A /* 2014-01-14_14;36;04.jpg */,
+				00A9BC8E188F56720095800A /* boggle1.jpg */,
 				00A9BC68188F551D0095800A /* AppDelegate.h */,
 				00A9BC69188F551D0095800A /* AppDelegate.m */,
 				00A9BC6B188F551D0095800A /* Main.storyboard */,
@@ -130,6 +142,10 @@
 				00A9BC62188F551D0095800A /* InfoPlist.strings */,
 				00A9BC65188F551D0095800A /* main.m */,
 				00A9BC67188F551D0095800A /* BoggleTimer-Prefix.pch */,
+				00A9BC92188F60600095800A /* bibimViewController.h */,
+				00A9BC93188F60600095800A /* bibimViewController.m */,
+				00A9BC95188F63F50095800A /* ListOfRamen.h */,
+				00A9BC96188F63F50095800A /* ListOfRamen.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,6 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A9BC8F188F56720095800A /* boggle1.jpg in Resources */,
+				00A9BC91188F58F40095800A /* 2014-01-14_14;36;04.jpg in Resources */,
 				00A9BC72188F551D0095800A /* Images.xcassets in Resources */,
 				00A9BC64188F551D0095800A /* InfoPlist.strings in Resources */,
 				00A9BC6D188F551D0095800A /* Main.storyboard in Resources */,
@@ -251,7 +269,9 @@
 			files = (
 				00A9BC70188F551D0095800A /* ViewController.m in Sources */,
 				00A9BC6A188F551D0095800A /* AppDelegate.m in Sources */,
+				00A9BC94188F60600095800A /* bibimViewController.m in Sources */,
 				00A9BC66188F551D0095800A /* main.m in Sources */,
+				00A9BC97188F63F50095800A /* ListOfRamen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +480,7 @@
 				00A9BC8A188F551D0095800A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00A9BC8B188F551D0095800A /* Build configuration list for PBXNativeTarget "BoggleTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +489,7 @@
 				00A9BC8D188F551D0095800A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

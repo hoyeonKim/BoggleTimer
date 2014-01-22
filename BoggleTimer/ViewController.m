@@ -7,16 +7,33 @@
 //
 
 #import "ViewController.h"
+#import "bibimViewController.h"
+#define GOOK_CELL @"GOOK_CELL"
+#define BIBIM_CELL @"BIBIM_CELL"
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>{
+    NSArray *data;
+}
+@property (weak, nonatomic) IBOutlet UITableView *table1;
+@property (weak, nonatomic) IBOutlet UIImageView *image1;
+@property (weak, nonatomic) IBOutlet UILabel *lbl1;
 
-@interface ViewController ()
 
 @end
 
 @implementation ViewController
-
+//국물라면 테이블뷰
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:GOOK_CELL];
+    cell.textLabel.text = data[indexPath.row];
+    return cell;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [data count];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    data =@[@"신라면",@"삼양",@"진"];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
