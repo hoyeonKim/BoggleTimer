@@ -9,5 +9,11 @@
 #import "ListOfRamen.h"
 
 @implementation ListOfRamen
-
++(id)ramen:(NSString *)name time:(NSString *)time image:(NSString *)image{
+    ListOfRamen *item = [[ListOfRamen alloc]init];
+    item.name = name;
+    item.time = time;
+    item.imageName = image;
+    return item;
+}
 @end

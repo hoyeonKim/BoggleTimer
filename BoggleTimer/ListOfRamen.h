@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface ListOfRamen : NSObject
-
+@property (strong,nonatomic) NSString *name;
+@property (strong, nonatomic)NSString *time;
+@property (strong, nonatomic)NSString *imageName;
++(id)ramen:(NSString *)name time:(NSString *)time image:(NSString *)image;
 @end

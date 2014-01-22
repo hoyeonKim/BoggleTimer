@@ -1,5 +1,5 @@
 //
-//  bibimViewController.h
+//  gookmulViewController.h
 //  BoggleTimer
 //
 //  Created by SDT-1 on 2014. 1. 22..
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface bibimViewController : UIViewController
-@property (nonatomic)NSInteger ramenTime;
+@interface gookmulViewController : UIViewController
+
+
 @end

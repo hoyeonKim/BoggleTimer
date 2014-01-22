@@ -25,6 +25,10 @@
 		00A9BC91188F58F40095800A /* 2014-01-14_14;36;04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A9BC90188F58F40095800A /* 2014-01-14_14;36;04.jpg */; };
 		00A9BC94188F60600095800A /* bibimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9BC93188F60600095800A /* bibimViewController.m */; };
 		00A9BC97188F63F50095800A /* ListOfRamen.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9BC96188F63F50095800A /* ListOfRamen.m */; };
+		00A9BC9A188F72D20095800A /* gookmulViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9BC99188F72D20095800A /* gookmulViewController.m */; };
+		00A9BC9D188F8C260095800A /* productCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9BC9C188F8C260095800A /* productCell.m */; };
+		00A9BCA1188F919B0095800A /* images-5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 00A9BCA0188F919B0095800A /* images-5.jpeg */; };
+		00A9BCA3188F930D0095800A /* s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A9BCA2188F930D0095800A /* s.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,12 @@
 		00A9BC93188F60600095800A /* bibimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bibimViewController.m; sourceTree = "<group>"; };
 		00A9BC95188F63F50095800A /* ListOfRamen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfRamen.h; sourceTree = "<group>"; };
 		00A9BC96188F63F50095800A /* ListOfRamen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListOfRamen.m; sourceTree = "<group>"; };
+		00A9BC98188F72D20095800A /* gookmulViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gookmulViewController.h; sourceTree = "<group>"; };
+		00A9BC99188F72D20095800A /* gookmulViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gookmulViewController.m; sourceTree = "<group>"; };
+		00A9BC9B188F8C260095800A /* productCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = productCell.h; sourceTree = "<group>"; };
+		00A9BC9C188F8C260095800A /* productCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = productCell.m; sourceTree = "<group>"; };
+		00A9BCA0188F919B0095800A /* images-5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-5.jpeg"; sourceTree = "<group>"; };
+		00A9BCA2188F930D0095800A /* s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,8 @@
 		00A9BC5F188F551D0095800A /* BoggleTimer */ = {
 			isa = PBXGroup;
 			children = (
+				00A9BCA2188F930D0095800A /* s.jpg */,
+				00A9BCA0188F919B0095800A /* images-5.jpeg */,
 				00A9BC90188F58F40095800A /* 2014-01-14_14;36;04.jpg */,
 				00A9BC8E188F56720095800A /* boggle1.jpg */,
 				00A9BC68188F551D0095800A /* AppDelegate.h */,
@@ -146,6 +158,10 @@
 				00A9BC93188F60600095800A /* bibimViewController.m */,
 				00A9BC95188F63F50095800A /* ListOfRamen.h */,
 				00A9BC96188F63F50095800A /* ListOfRamen.m */,
+				00A9BC98188F72D20095800A /* gookmulViewController.h */,
+				00A9BC99188F72D20095800A /* gookmulViewController.m */,
+				00A9BC9B188F8C260095800A /* productCell.h */,
+				00A9BC9C188F8C260095800A /* productCell.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,6 +260,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A9BCA1188F919B0095800A /* images-5.jpeg in Resources */,
+				00A9BCA3188F930D0095800A /* s.jpg in Resources */,
 				00A9BC8F188F56720095800A /* boggle1.jpg in Resources */,
 				00A9BC91188F58F40095800A /* 2014-01-14_14;36;04.jpg in Resources */,
 				00A9BC72188F551D0095800A /* Images.xcassets in Resources */,
@@ -271,7 +289,9 @@
 				00A9BC6A188F551D0095800A /* AppDelegate.m in Sources */,
 				00A9BC94188F60600095800A /* bibimViewController.m in Sources */,
 				00A9BC66188F551D0095800A /* main.m in Sources */,
+				00A9BC9D188F8C260095800A /* productCell.m in Sources */,
 				00A9BC97188F63F50095800A /* ListOfRamen.m in Sources */,
+				00A9BC9A188F72D20095800A /* gookmulViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
